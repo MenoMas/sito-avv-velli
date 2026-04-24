@@ -1,0 +1,1913 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///C:/Users/user/Downloads/avv_velli_updated%20(3)%20(1).html -->
+<html lang="it"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avv. Massimo Velli – Studio Legale</title>
+<link href="./Avv. Massimo Velli – Studio Legale_files/css2" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #0c1a2e;
+    --navy-mid: #112240;
+    --gold: #b8973a;
+    --gold-light: #d4af61;
+    --gold-pale: #f0e5c5;
+    --cream: #f8f4ec;
+    --text-main: #1a1a2e;
+    --text-muted: #6b6b80;
+    --border: rgba(184,151,58,0.25);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    background: var(--cream);
+    color: var(--text-main);
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1.2rem 4rem;
+    background: rgba(12, 26, 46, 0.97);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: var(--gold-light);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+  .nav-links a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    font-size: 0.78rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    transition: color 0.3s;
+  }
+  .nav-links a:hover { color: var(--gold-light); }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    background: var(--navy);
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 10rem 4rem 6rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; top: 0; right: 0;
+    width: 50%; height: 100%;
+    background: linear-gradient(135deg, transparent 60%, rgba(184,151,58,0.06) 100%);
+    pointer-events: none;
+  }
+  .hero::after {
+    content: '';
+    position: absolute; bottom: -2px; left: 0; right: 0; height: 120px;
+    background: linear-gradient(to bottom, transparent, var(--cream));
+    pointer-events: none;
+  }
+  .hero-eyebrow {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 400;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+    display: flex; align-items: center; gap: 1rem;
+  }
+  .hero-eyebrow::before {
+    content: '';
+    display: inline-block; width: 40px; height: 1px;
+    background: var(--gold);
+  }
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    font-weight: 300;
+    color: #fff;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.2rem;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--gold-light);
+  }
+  .hero-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-weight: 300;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    margin-top: 0.5rem;
+  }
+  .hero-tags { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 3.5rem; }
+  .tag {
+    border: 1px solid var(--border);
+    color: var(--gold-pale);
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.45rem 1.1rem;
+    border-radius: 2px;
+    font-weight: 400;
+  }
+  .hero-cta {
+    display: inline-flex; align-items: center; gap: 0.8rem;
+    background: var(--gold);
+    color: var(--navy);
+    text-decoration: none;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 1rem 2.2rem;
+    transition: background 0.3s, transform 0.2s;
+  }
+  .hero-cta:hover { background: var(--gold-light); transform: translateY(-1px); }
+  .hero-cta svg { width: 16px; height: 16px; }
+
+  .hero-badge {
+    position: absolute; right: 6rem; top: 50%;
+    transform: translateY(-50%);
+    width: 200px; height: 200px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    flex-direction: column; text-align: center;
+    padding: 2rem;
+    opacity: 0.6;
+  }
+  .hero-badge-year {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem; font-weight: 300;
+    color: var(--gold-light); line-height: 1;
+  }
+  .hero-badge-text {
+    font-size: 0.6rem; letter-spacing: 0.2em;
+    text-transform: uppercase; color: rgba(255,255,255,0.5);
+    margin-top: 0.5rem;
+  }
+
+  /* SECTIONS */
+  section { padding: 6rem 4rem; }
+
+  .section-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 400;
+    display: flex; align-items: center; gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .section-label::before {
+    content: ''; display: inline-block;
+    width: 30px; height: 1px; background: var(--gold);
+  }
+  h2.section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 300;
+    line-height: 1.15;
+    color: var(--navy);
+    margin-bottom: 1rem;
+  }
+  h2.section-title em { font-style: italic; color: var(--gold); }
+
+  /* ABOUT */
+  .about { background: var(--cream); }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    margin-top: 3.5rem;
+    align-items: start;
+  }
+  .about-text p {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: #3a3a50;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+  }
+  .about-text p:first-child::first-letter {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    font-weight: 300;
+    float: left;
+    line-height: 0.8;
+    margin: 0.1em 0.1em 0 0;
+    color: var(--gold);
+  }
+  .about-stats {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  .stat-box {
+    border: 1px solid var(--border);
+    padding: 1.8rem 1.5rem;
+    background: #fff;
+    position: relative;
+    transition: border-color 0.3s;
+  }
+  .stat-box::before {
+    content: '';
+    position: absolute; top: 0; left: 0;
+    width: 3px; height: 100%;
+    background: var(--gold);
+  }
+  .stat-box:hover { border-color: var(--gold); }
+  .stat-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem; font-weight: 300;
+    color: var(--navy); line-height: 1;
+    margin-bottom: 0.3rem;
+  }
+  .stat-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+
+  /* EXPERTISE */
+  .expertise { background: var(--navy); }
+  .expertise .section-label { color: var(--gold-light); }
+  .expertise .section-title { color: #fff; }
+  .expertise .section-title em { color: var(--gold-light); }
+  .areas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5px;
+    margin-top: 3.5rem;
+    background: var(--border);
+  }
+  .area-card {
+    background: var(--navy-mid);
+    padding: 2.5rem 2rem;
+    transition: background 0.3s;
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+  }
+  .area-card::after {
+    content: '';
+    position: absolute; bottom: 0; left: 0;
+    width: 0; height: 2px;
+    background: var(--gold);
+    transition: width 0.4s ease;
+  }
+  .area-card:hover { background: #162035; }
+  .area-card:hover::after { width: 100%; }
+  .area-icon {
+    width: 40px; height: 40px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 1.5rem;
+    color: var(--gold);
+    font-size: 1rem;
+  }
+  .area-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem; font-weight: 400;
+    color: #fff; margin-bottom: 0.8rem;
+  }
+  .area-card p {
+    font-size: 0.87rem;
+    color: rgba(255,255,255,0.45);
+    line-height: 1.75;
+    font-weight: 300;
+  }
+
+  /* RESPONSABILITA' MEDICA */
+  .resp-medica { background: #fff; }
+  .rm-intro {
+    font-size: 1.05rem; color: #3a3a50;
+    line-height: 1.85; font-weight: 300;
+    max-width: 820px; margin: 0.5rem 0 3.5rem;
+    border-left: 3px solid var(--gold);
+    padding-left: 1.5rem;
+  }
+  .rm-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    background: rgba(184,151,58,0.12);
+    margin-bottom: 3rem;
+  }
+  .rm-col {
+    background: var(--cream);
+    padding: 2.8rem 2.5rem;
+    transition: background 0.3s;
+  }
+  .rm-col:hover { background: #fff; }
+  .rm-col-header {
+    display: flex; align-items: center; gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .rm-col-icon {
+    width: 44px; height: 44px; border-radius: 50%;
+    border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.1rem; flex-shrink: 0;
+    color: var(--gold);
+  }
+  .rm-col-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.35rem; font-weight: 400;
+    color: var(--navy); line-height: 1.2;
+  }
+  .rm-col-sub {
+    font-size: 0.65rem; letter-spacing: 0.22em;
+    text-transform: uppercase; color: var(--gold);
+    font-weight: 400; margin-top: 0.2rem;
+  }
+  .rm-steps { list-style: none; padding: 0; }
+  .rm-step {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(184,151,58,0.1);
+    align-items: start;
+  }
+  .rm-step:last-child { border-bottom: none; }
+  .rm-step-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem; font-weight: 300;
+    color: var(--gold); line-height: 1.1;
+    opacity: 0.7;
+  }
+  .rm-step-body h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem; font-weight: 400;
+    color: var(--navy); margin-bottom: 0.3rem;
+  }
+  .rm-step-body p {
+    font-size: 0.84rem; color: var(--text-muted);
+    line-height: 1.7; font-weight: 300;
+  }
+
+  /* Evidenza box */
+  .rm-highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .rm-highlight {
+    background: var(--navy);
+    padding: 2rem 1.8rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .rm-highlight::before {
+    content: '';
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 3px;
+    background: var(--gold);
+  }
+  .rm-highlight-label {
+    font-size: 0.62rem; letter-spacing: 0.28em;
+    text-transform: uppercase; color: var(--gold);
+    font-weight: 400; margin-bottom: 0.8rem;
+  }
+  .rm-highlight p {
+    font-size: 0.88rem; color: rgba(255,255,255,0.65);
+    line-height: 1.75; font-weight: 300;
+  }
+
+  .rm-cta-strip {
+    display: flex; align-items: center; justify-content: space-between;
+    background: var(--cream);
+    border: 1px solid var(--border);
+    padding: 2rem 2.5rem;
+    flex-wrap: wrap; gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  .rm-cta-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.35rem; font-weight: 300;
+    color: var(--navy); max-width: 600px;
+    line-height: 1.4;
+  }
+  .rm-cta-text em { font-style: italic; color: var(--gold); }
+  .rm-cta-btn {
+    display: inline-flex; align-items: center; gap: 0.8rem;
+    background: var(--navy); color: var(--gold-light);
+    text-decoration: none;
+    font-size: 0.72rem; font-weight: 400;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    padding: 0.95rem 2rem;
+    transition: background 0.3s;
+    white-space: nowrap;
+  }
+  .rm-cta-btn:hover { background: var(--navy-mid); }
+
+  @media (max-width: 900px) {
+    .rm-columns, .rm-highlight-grid { grid-template-columns: 1fr; }
+    .rm-cta-strip { flex-direction: column; align-items: flex-start; }
+  }
+
+  /* EXPERIENCE */
+  .experience { background: #fff; }
+  .exp-timeline { margin-top: 3.5rem; }
+  .exp-item {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 3rem;
+    padding: 2.5rem 0;
+    border-bottom: 1px solid rgba(184,151,58,0.15);
+    position: relative;
+  }
+  .exp-item::before {
+    content: '';
+    position: absolute; left: 200px; top: 0; bottom: 0;
+    width: 1px; background: rgba(184,151,58,0.15);
+  }
+  .exp-date {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem; font-style: italic;
+    color: var(--gold);
+    padding-top: 0.25rem;
+    text-align: right;
+    padding-right: 2.5rem;
+  }
+  .exp-content h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.35rem; font-weight: 400;
+    color: var(--navy); margin-bottom: 0.5rem;
+  }
+  .exp-content .org {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.9rem;
+    font-weight: 400;
+  }
+  .exp-content p {
+    font-size: 0.92rem;
+    color: var(--text-muted);
+    line-height: 1.8; font-weight: 300;
+  }
+
+  /* CERTIFICATIONS */
+  .certifications { background: var(--cream); }
+  .cert-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 3.5rem;
+  }
+  .cert-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .cert-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(184,151,58,0.12);
+  }
+  .cert-year {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem; font-weight: 300;
+    color: var(--gold); margin-bottom: 0.5rem;
+  }
+  .cert-title {
+    font-size: 0.82rem;
+    color: var(--text-main);
+    font-weight: 400; line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  /* VALUES */
+  .values { background: var(--navy); padding: 5rem 4rem; }
+  .values-inner {
+    max-width: 900px; margin: 0 auto; text-align: center;
+  }
+  blockquote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+    font-weight: 300; font-style: italic;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.4;
+    border: none; padding: 0;
+    position: relative;
+  }
+  blockquote::before, blockquote::after {
+    content: '"';
+    font-size: 5rem; line-height: 0;
+    vertical-align: -0.5em;
+    color: var(--gold);
+    font-style: normal; margin: 0 0.1em;
+    opacity: 0.6;
+  }
+  .quote-author {
+    margin-top: 2rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+
+  /* CONTACT */
+  .contact { background: #fff; }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    margin-top: 3.5rem;
+    align-items: start;
+  }
+  .contact-info p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.9; font-weight: 300;
+    margin-bottom: 2rem;
+  }
+  .contact-details { list-style: none; }
+  .contact-details li {
+    display: flex; align-items: flex-start; gap: 1rem;
+    padding: 1.1rem 0;
+    border-bottom: 1px solid rgba(184,151,58,0.12);
+    font-size: 0.9rem;
+  }
+  .contact-details .detail-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 400;
+    min-width: 90px;
+    padding-top: 0.15rem;
+  }
+  .contact-details .detail-value {
+    color: var(--text-main);
+    font-weight: 300;
+  }
+  .contact-details .detail-value a {
+    color: var(--text-main);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .contact-details .detail-value a:hover { color: var(--gold); }
+
+  .contact-form-area {
+    background: var(--cream);
+    border: 1px solid var(--border);
+    padding: 2.5rem;
+  }
+  .contact-form-area h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem; font-weight: 300;
+    color: var(--navy); margin-bottom: 1.5rem;
+  }
+  .form-group { margin-bottom: 1.2rem; }
+  .form-group label {
+    display: block;
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem; font-weight: 400;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 100%; padding: 0.85rem 1rem;
+    border: 1px solid rgba(184,151,58,0.25);
+    background: #fff;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.9rem; font-weight: 300;
+    color: var(--text-main);
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  .form-group input:focus,
+  .form-group textarea:focus { border-color: var(--gold); }
+  .form-group textarea { height: 120px; resize: vertical; }
+  .btn-submit {
+    width: 100%; padding: 1rem;
+    background: var(--navy);
+    color: var(--gold-light);
+    border: 1px solid var(--navy);
+    font-family: 'Jost', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .btn-submit:hover { background: var(--navy-mid); }
+
+  /* IMPRESE */
+  .imprese { background: #fff; }
+  .imprese-intro {
+    font-size: 1.05rem;
+    color: #3a3a50;
+    line-height: 1.85;
+    font-weight: 300;
+    max-width: 780px;
+    margin: 1rem 0 3rem;
+    border-left: 3px solid var(--gold);
+    padding-left: 1.5rem;
+  }
+  .imprese-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    background: rgba(184,151,58,0.12);
+  }
+  .imprese-block {
+    background: var(--cream);
+    padding: 2.5rem 2.2rem;
+    transition: background 0.3s;
+  }
+  .imprese-block:hover { background: #fff; }
+  .imprese-block-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem; font-weight: 400;
+    color: var(--navy);
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; gap: 0.6rem;
+  }
+  .imprese-block-title::before {
+    content: '';
+    display: inline-block;
+    width: 6px; height: 6px;
+    background: var(--gold);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .imprese-list {
+    list-style: none;
+    padding: 0;
+  }
+  .imprese-list li {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    font-weight: 300;
+    padding: 0.45rem 0;
+    border-bottom: 1px solid rgba(184,151,58,0.08);
+    display: flex; align-items: flex-start; gap: 0.7rem;
+  }
+  .imprese-list li::before {
+    content: '—';
+    color: var(--gold);
+    font-size: 0.75rem;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+  }
+  .imprese-list li:last-child { border-bottom: none; }
+
+  @media (max-width: 900px) {
+    .imprese-grid { grid-template-columns: 1fr; }
+  }
+
+  /* PERCHE' NOI */
+  .whyus { background: var(--cream); }
+  .whyus-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3.5rem;
+  }
+  .why-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    padding: 2.2rem 2rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+  }
+  .why-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 35px rgba(184,151,58,0.1);
+  }
+  .why-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem; font-weight: 300;
+    color: rgba(184,151,58,0.2);
+    line-height: 1;
+    margin-bottom: 1rem;
+    position: absolute; top: 1.5rem; right: 1.5rem;
+  }
+  .why-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem; font-weight: 400;
+    color: var(--navy); margin-bottom: 0.8rem;
+  }
+  .why-card p {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.8; font-weight: 300;
+  }
+
+  /* OSSERVATORIO GIURISPRUDENZIALE */
+  .osservatorio { background: var(--navy); position: relative; overflow: hidden; }
+  .osservatorio::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background:
+      radial-gradient(ellipse 60% 40% at 80% 20%, rgba(184,151,58,0.06) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 60% at 10% 80%, rgba(184,151,58,0.04) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .osservatorio .section-label { color: var(--gold-light); }
+  .osservatorio .section-title { color: #fff; }
+  .osservatorio .section-title em { color: var(--gold-light); }
+
+  /* Ticker bar */
+  .oss-ticker-wrap {
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: rgba(184,151,58,0.06);
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+    padding: 0.85rem 1.5rem;
+    display: flex; align-items: center; gap: 1.5rem;
+  }
+  .oss-ticker-label {
+    display: flex; align-items: center; gap: 0.6rem;
+    font-size: 0.62rem; letter-spacing: 0.28em;
+    text-transform: uppercase; color: var(--gold);
+    font-weight: 400; white-space: nowrap; flex-shrink: 0;
+  }
+  .live-dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: #e05c5c;
+    animation: livepulse 1.8s ease-in-out infinite;
+    flex-shrink: 0;
+  }
+  @keyframes livepulse {
+    0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(224,92,92,0.5); }
+    50% { opacity: 0.7; box-shadow: 0 0 0 6px rgba(224,92,92,0); }
+  }
+  .oss-ticker-track {
+    overflow: hidden; flex: 1;
+    mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+  }
+  .oss-ticker-inner {
+    display: flex; gap: 3rem; white-space: nowrap;
+    animation: ticker 38s linear infinite;
+    will-change: transform;
+  }
+  .oss-ticker-inner:hover { animation-play-state: paused; }
+  @keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .oss-ticker-item {
+    font-size: 0.8rem; color: rgba(255,255,255,0.6);
+    font-weight: 300; display: inline-flex; align-items: center; gap: 0.7rem;
+  }
+  .oss-ticker-item::before {
+    content: '—'; color: var(--gold); font-size: 0.7rem;
+  }
+  .oss-ticker-court {
+    color: var(--gold-pale); font-weight: 400; font-size: 0.75rem;
+  }
+
+  /* Filter tabs */
+  .oss-filters {
+    display: flex; flex-wrap: wrap; gap: 0.6rem;
+    margin-bottom: 2.5rem;
+  }
+  .oss-filter-btn {
+    background: none;
+    border: 1px solid rgba(184,151,58,0.3);
+    color: rgba(255,255,255,0.5);
+    font-family: 'Jost', sans-serif;
+    font-size: 0.68rem; font-weight: 400;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    padding: 0.55rem 1.2rem;
+    cursor: pointer;
+    transition: all 0.25s;
+    border-radius: 1px;
+  }
+  .oss-filter-btn:hover {
+    border-color: var(--gold); color: var(--gold-pale);
+  }
+  .oss-filter-btn.active {
+    background: var(--gold); border-color: var(--gold);
+    color: var(--navy); font-weight: 500;
+  }
+
+  /* Sentence cards grid */
+  .oss-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5px;
+    background: rgba(184,151,58,0.12);
+  }
+  .sent-card {
+    background: var(--navy-mid);
+    padding: 2rem 1.8rem;
+    transition: background 0.3s, transform 0.2s;
+    cursor: default;
+    position: relative;
+    display: flex; flex-direction: column; gap: 1rem;
+  }
+  .sent-card:hover { background: #162035; }
+  .sent-card.hidden { display: none; }
+  .sent-card-top {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .sent-area-badge {
+    font-size: 0.6rem; letter-spacing: 0.22em;
+    text-transform: uppercase; font-weight: 400;
+    color: var(--gold); border: 1px solid rgba(184,151,58,0.4);
+    padding: 0.3rem 0.7rem; border-radius: 1px; white-space: nowrap;
+  }
+  .sent-date {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.82rem; font-style: italic;
+    color: rgba(255,255,255,0.3); white-space: nowrap;
+  }
+  .sent-court {
+    font-size: 0.65rem; letter-spacing: 0.15em;
+    text-transform: uppercase; color: rgba(255,255,255,0.4);
+    font-weight: 300;
+  }
+  .sent-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.12rem; font-weight: 400;
+    color: rgba(255,255,255,0.88);
+    line-height: 1.35;
+  }
+  .sent-massima {
+    font-size: 0.82rem; color: rgba(255,255,255,0.38);
+    line-height: 1.75; font-weight: 300;
+    border-top: 1px solid rgba(184,151,58,0.1);
+    padding-top: 0.8rem;
+    font-style: italic;
+  }
+  .sent-ref {
+    font-size: 0.65rem; letter-spacing: 0.1em;
+    color: rgba(184,151,58,0.55); font-weight: 400;
+    margin-top: auto;
+  }
+  .sent-new-badge {
+    position: absolute; top: 1rem; right: 1rem;
+    background: rgba(224,92,92,0.15);
+    border: 1px solid rgba(224,92,92,0.4);
+    color: #e07070;
+    font-size: 0.55rem; letter-spacing: 0.25em;
+    text-transform: uppercase; font-weight: 500;
+    padding: 0.2rem 0.55rem; border-radius: 1px;
+    display: none;
+  }
+  .sent-card.is-new .sent-new-badge { display: block; }
+  .sent-card.is-new .sent-card-top { padding-right: 3.5rem; }
+
+  /* Update strip at bottom */
+  .oss-footer-strip {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-top: 2.5rem;
+    border-top: 1px solid rgba(184,151,58,0.15);
+    padding-top: 1.5rem;
+    flex-wrap: wrap; gap: 1rem;
+  }
+  .oss-update-info {
+    display: flex; align-items: center; gap: 0.75rem;
+    font-size: 0.75rem; color: rgba(255,255,255,0.35);
+    font-weight: 300;
+  }
+  .oss-update-info strong { color: rgba(255,255,255,0.6); font-weight: 400; }
+  .oss-subscribe-cta {
+    display: inline-flex; align-items: center; gap: 0.7rem;
+    border: 1px solid rgba(184,151,58,0.4);
+    color: var(--gold-pale);
+    font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase;
+    font-weight: 400; padding: 0.75rem 1.6rem;
+    cursor: pointer; background: none;
+    font-family: 'Jost', sans-serif;
+    text-decoration: none;
+    transition: background 0.3s, border-color 0.3s;
+  }
+  .oss-subscribe-cta:hover {
+    background: rgba(184,151,58,0.1); border-color: var(--gold);
+  }
+
+  @media (max-width: 900px) {
+    .oss-grid { grid-template-columns: 1fr; }
+    .oss-filters { gap: 0.5rem; }
+  }
+
+  /* FAQ */
+  .faq { background: var(--navy); }
+  .faq .section-label { color: var(--gold-light); }
+  .faq .section-title { color: #fff; }
+  .faq .section-title em { color: var(--gold-light); }
+  .faq-list { margin-top: 3rem; max-width: 860px; }
+  .faq-item {
+    border-bottom: 1px solid rgba(184,151,58,0.2);
+  }
+  .faq-q {
+    width: 100%; background: none; border: none;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1.6rem 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem; font-weight: 400;
+    color: rgba(255,255,255,0.85);
+    cursor: pointer; text-align: left;
+    transition: color 0.3s;
+    gap: 1rem;
+  }
+  .faq-q:hover { color: var(--gold-light); }
+  .faq-arrow {
+    font-size: 1.5rem; font-weight: 300;
+    color: var(--gold); flex-shrink: 0;
+    transition: transform 0.3s;
+    font-family: 'Jost', sans-serif;
+  }
+  .faq-a {
+    max-height: 0; overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s;
+  }
+  .faq-a.open { max-height: 300px; padding-bottom: 1.5rem; }
+  .faq-a p {
+    font-size: 0.92rem; font-weight: 300;
+    color: rgba(255,255,255,0.5);
+    line-height: 1.85;
+  }
+
+  @media (max-width: 900px) {
+    .whyus-grid { grid-template-columns: 1fr; }
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--navy);
+    padding: 2.5rem 4rem;
+    display: flex; justify-content: space-between; align-items: center;
+    border-top: 1px solid var(--border);
+  }
+  .footer-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem; color: var(--gold-light);
+    letter-spacing: 0.12em; text-transform: uppercase;
+    font-weight: 400;
+  }
+  .footer-note {
+    font-size: 0.72rem;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 0.05em;
+  }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .hero-eyebrow, .hero h1, .hero-subtitle, .hero-tags, .hero-cta {
+    animation: fadeUp 0.9s ease both;
+  }
+  .hero h1 { animation-delay: 0.1s; }
+  .hero-subtitle { animation-delay: 0.2s; }
+  .hero-tags { animation-delay: 0.3s; }
+  .hero-cta { animation-delay: 0.4s; }
+
+  @media (max-width: 900px) {
+    nav { padding: 1rem 2rem; }
+    .nav-links { display: none; }
+    section { padding: 4rem 2rem; }
+    .hero { padding: 8rem 2rem 5rem; }
+    .hero-badge { display: none; }
+    .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .areas-grid { grid-template-columns: 1fr; }
+    .cert-grid { grid-template-columns: 1fr 1fr; }
+    .exp-item { grid-template-columns: 1fr; gap: 0.5rem; }
+    .exp-item::before { display: none; }
+    .exp-date { text-align: left; padding: 0; }
+    footer { flex-direction: column; gap: 1rem; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="file:///C:/Users/user/Downloads/avv_velli_updated%20(3)%20(1).html#">Avv. Massimo Velli</a>
+  <ul class="nav-links">
+    <li><a href="file:///C:/Users/user/Downloads/avv_velli_updated%20(3)%20(1).html#profilo">Profilo</a></li>
+    <li><a href="file:///C:/Users/user/Downloads/avv_velli_updated%20(3)%20(1).html#aree">Aree di Pratica</a></li>
+    <li><a href="file:///C:/Users/user/Downloads/avv_velli_updated%20(3)%20(1).html#resp-medica">Resp. Medica</a></li>
+    <li><a href="file:///C:/Users/user/Downloads/avv_velli_updated%20(3)%20(1).html#imprese">Imprese</a></li>
+    <li><a href="file:///C:/Users/user/Downloads/avv_velli_updated%20(3)%20(1).html#giurisprudenza">Giurisprudenza</a></li>
+    <li><a href="file:///C:/Users/user/Downloads/avv_velli_updated%20(3)%20(1).html#esperienza">Esperienza</a></li>
+    <li><a href="file:///C:/Users/user/Downloads/avv_velli_updated%20(3)%20(1).html#contatti">Contatti</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-eyebrow">Studio Legale Velli — Avellino · Napoli</div>
+  <h1>Massimo <em>Velli</em></h1>
+  <p class="hero-subtitle">Avvocato Civilista · Cassazionista</p>
+  <div class="hero-tags">
+    <span class="tag">Diritto Civile</span>
+    <span class="tag">Diritto Commerciale</span>
+    <span class="tag">Responsabilità Medica</span>
+    <span class="tag">Diritto di Famiglia</span>
+    <span class="tag">Recupero Crediti</span>
+    <span class="tag">Diritto del Lavoro</span>
+    <span class="tag">Diritto Tributario</span>
+    <span class="tag">Diritto Amministrativo</span>
+  </div>
+  <a href="file:///C:/Users/user/Downloads/avv_velli_updated%20(3)%20(1).html#contatti" class="hero-cta">
+    Richiedi una Consulenza
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+      <path d="M3 8h10M9 4l4 4-4 4"></path>
+    </svg>
+  </a>
+  <div class="hero-badge">
+    <div class="hero-badge-year">15+</div>
+    <div class="hero-badge-text">Anni di Esperienza Professionale</div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="profilo">
+  <div class="section-label">Chi sono</div>
+  <h2 class="section-title">Competenza, <em>rigore</em><br>e dedizione al cliente</h2>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>Avvocato civilista con oltre quindici anni di attività forense, iscritto all'Albo Speciale degli Avvocati ammessi al patrocinio dinanzi alla Corte di Cassazione e alle altre Giurisdizioni Superiori. Esercito la professione con studio ad Avellino e a Napoli, offrendo un'assistenza legale completa, qualificata e personalizzata.</p>
+      <p>La mia attività spazia dal diritto civile e commerciale al diritto bancario e finanziario, con particolare specializzazione in responsabilità medica, diritto di famiglia, successioni e recupero crediti. Affianco i miei clienti — persone fisiche, imprese e istituti di credito — tanto nella fase stragiudiziale quanto in quella giudiziale, con l'obiettivo di tutelare al meglio i loro diritti e interessi.</p>
+      <p>Proattivo e perseverante anche nei casi più complessi, ho sviluppato un approccio multidisciplinare che mi consente di offrire soluzioni efficaci e concrete, valorizzando ogni risorsa disponibile nell'interesse del cliente.</p>
+    </div>
+    <div class="about-stats">
+      <div class="stat-box">
+        <div class="stat-number">2011</div>
+        <div class="stat-label">Iscrizione all'Albo</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number">2023</div>
+        <div class="stat-label">Abilitazione in Cassazione</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number">2</div>
+        <div class="stat-label">Sedi: Avellino e Napoli</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section class="expertise" id="aree">
+  <div class="section-label">Aree di Pratica</div>
+  <h2 class="section-title">Un'assistenza <em>specializzata</em><br>in ogni ambito</h2>
+  <div class="areas-grid">
+
+    <div class="area-card">
+      <div class="area-icon">⚖</div>
+      <h3>Diritto Civile e Commerciale</h3>
+      <p>Consulenza e assistenza in materia contrattuale, societaria, locazioni, esecuzioni immobiliari e contenzioso condominiale. Redazione e negoziazione di contratti commerciali complessi.</p>
+    </div>
+
+    <div class="area-card">
+      <div class="area-icon">🏦</div>
+      <h3>Diritto Bancario e Recupero Crediti</h3>
+      <p>Gestione e recupero di crediti NPL per istituti di credito. Assistenza nei contenziosi bancari, analisi di contratti di conto corrente, mutui, leasing e derivati. Attività di Due Diligence.</p>
+    </div>
+
+    <div class="area-card">
+      <div class="area-icon">🏥</div>
+      <h3>Responsabilità Medica</h3>
+      <p>Specializzazione in responsabilità civile del medico e delle strutture sanitarie. Assistenza stragiudiziale e giudiziale alle vittime di malpractice: dall'analisi della cartella clinica alla trattativa con le assicurazioni, fino al giudizio civile per il risarcimento del danno biologico, morale e patrimoniale. <a href="file:///C:/Users/user/Downloads/avv_velli_updated%20(3)%20(1).html#resp-medica" style="color:var(--gold-light);font-size:0.8rem;letter-spacing:0.1em;">Scopri il servizio →</a></p>
+    </div>
+
+    <div class="area-card">
+      <div class="area-icon">👨‍👩‍👧</div>
+      <h3>Diritto di Famiglia e Successioni</h3>
+      <p>Separazioni consensuali e giudiziali, divorzi, regolamentazione dell'affido dei figli. Gestione di cause ereditarie, successioni e divisioni di patrimoni familiari.</p>
+    </div>
+
+    <div class="area-card">
+      <div class="area-icon">⚖</div>
+      <h3>Risarcimento Danni</h3>
+      <p>Assistenza nelle richieste di risarcimento da sinistri stradali, infortuni sul lavoro e lesioni personali. Collaborazione con una rete di medici legali per la valutazione del danno.</p>
+    </div>
+
+    <div class="area-card">
+      <div class="area-icon">🏢</div>
+      <h3>Consulenza Societaria e Contrattualistica d'Impresa</h3>
+      <p>Assistenza completa nel ciclo di vita dell'impresa: costituzione di società di capitali e di persone, redazione di statuti, patti parasociali e accordi tra soci. Consulenza continuativa a PMI e imprenditori individuali nella gestione ordinaria e straordinaria dell'attività d'impresa, comprese operazioni di cessione, affitto e rilievo d'azienda.</p>
+    </div>
+
+    <div class="area-card">
+      <div class="area-icon">📋</div>
+      <h3>Contrattualistica Commerciale Avanzata</h3>
+      <p>Redazione, revisione e negoziazione di contratti commerciali complessi: appalto, sub-appalto, contratti d'opera, fornitura, somministrazione, mandato, agenzia, franchising, distribuzione esclusiva, leasing, trasporto e spedizione. Tutela di marchi, brevetti e proprietà intellettuale. Assistenza nella fase precontrattuale e nella gestione delle controversie tra imprese.</p>
+    </div>
+
+    <div class="area-card">
+      <div class="area-icon">⚙</div>
+      <h3>Esecuzioni Civili</h3>
+      <p>Assistenza nelle procedure esecutive individuali — pignoramenti mobiliari, immobiliari e presso terzi — e concorsuali. Difesa del debitore e del creditore in ogni fase dell'esecuzione forzata, anche avanti ai Giudici dell'Esecuzione.</p>
+    </div>
+
+    <div class="area-card">
+      <div class="area-icon">💼</div>
+      <h3>Diritto del Lavoro e Previdenza Sociale</h3>
+      <p>Assistenza nei rapporti di lavoro subordinato e autonomo, dalla costituzione alla cessazione, sia dalla parte datoriale che del lavoratore. Consulenza in materia di licenziamenti, demansionamento, mobbing, lavoro irregolare, indennità di disoccupazione e prestazioni INPS. Contenzioso previdenziale e assicurativo.</p>
+    </div>
+
+    <div class="area-card">
+      <div class="area-icon">🏛</div>
+      <h3>Diritto Amministrativo</h3>
+      <p>Assistenza giudiziale e stragiudiziale nei rapporti tra privati, imprese ed enti pubblici. Impugnazione di provvedimenti amministrativi illegittimi davanti al TAR e al Consiglio di Stato. Tutela in materia di appalti pubblici, concessioni, autorizzazioni, permessi di costruire e abusi edilizi. Ricorsi avverso sanzioni amministrative e ordinanze comunali.</p>
+    </div>
+
+    <div class="area-card">
+      <div class="area-icon">📊</div>
+      <h3>Diritto Tributario</h3>
+      <p>Assistenza e difesa del contribuente — persona fisica o impresa — nei confronti dell'Agenzia delle Entrate, dell'Agenzia delle Entrate-Riscossione e degli enti locali. Impugnazione di avvisi di accertamento, cartelle esattoriali, avvisi di addebito e atti impositivi davanti alle Corti di Giustizia Tributaria di primo e secondo grado. Consulenza in materia di contenzioso fiscale e piani di rateizzazione del debito tributario.</p>
+    </div>
+
+    <div class="area-card">
+      <div class="area-icon">🛡</div>
+      <h3>Giudizi contro INAIL</h3>
+      <p>Assistenza giudiziale e stragiudiziale nei ricorsi contro l'INAIL per il riconoscimento e la liquidazione delle rendite da infortunio sul lavoro e malattia professionale. Impugnazione dei provvedimenti di diniego o riduzione delle prestazioni. Tutela del lavoratore nel riconoscimento del nesso causale tra attività lavorativa e patologia, con il supporto di medici legali specializzati.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- RESPONSABILITA' MEDICA -->
+<section class="resp-medica" id="resp-medica">
+  <div class="section-label">Servizio Specialistico</div>
+  <h2 class="section-title">Responsabilità <em>Medica</em></h2>
+  <p class="rm-intro">Lo Studio assiste il paziente — o i suoi familiari — in ogni fase del percorso di tutela: dalla prima analisi della cartella clinica alla trattativa stragiudiziale con la compagnia assicurativa, fino alla difesa in sede civile per il risarcimento integrale del danno subìto. Ogni caso viene esaminato con il supporto di medici legali specializzati e con il rigore che la materia impone.</p>
+
+  <!-- Due colonne stragiudiziale / giudiziale -->
+  <div class="rm-columns">
+
+    <div class="rm-col">
+      <div class="rm-col-header">
+        <div class="rm-col-icon">⚖</div>
+        <div>
+          <div class="rm-col-title">Fase Stragiudiziale</div>
+          <div class="rm-col-sub">Prima della causa</div>
+        </div>
+      </div>
+      <ul class="rm-steps">
+        <li class="rm-step">
+          <div class="rm-step-num">01</div>
+          <div class="rm-step-body">
+            <h4>Analisi della documentazione clinica</h4>
+            <p>Raccolta e studio della cartella clinica, referti, esami diagnostici e consensi informati. Individuazione delle eventuali omissioni, incongruenze o violazioni dei protocolli sanitari.</p>
+          </div>
+        </li>
+        <li class="rm-step">
+          <div class="rm-step-num">02</div>
+          <div class="rm-step-body">
+            <h4>Consulenza medico-legale</h4>
+            <p>Incarico a medici legali specializzati per la valutazione del nesso causale tra la condotta del sanitario e il danno patito, con stima del grado di invalidità permanente e temporanea.</p>
+          </div>
+        </li>
+        <li class="rm-step">
+          <div class="rm-step-num">03</div>
+          <div class="rm-step-body">
+            <h4>Richiesta di risarcimento stragiudiziale</h4>
+            <p>Redazione e invio della diffida formale alla struttura sanitaria e alla compagnia assicurativa, con quantificazione analitica di tutti i pregiudizi risarcibili: danno biologico, morale, patrimoniale e da perdita di chance.</p>
+          </div>
+        </li>
+        <li class="rm-step">
+          <div class="rm-step-num">04</div>
+          <div class="rm-step-body">
+            <h4>Mediazione obbligatoria</h4>
+            <p>Assistenza nel procedimento di mediazione civile obbligatoria previsto dalla Legge Gelli-Bianco (L. 24/2017), con l'obiettivo di raggiungere un accordo rapido ed equo senza necessità di ricorrere al giudizio.</p>
+          </div>
+        </li>
+        <li class="rm-step">
+          <div class="rm-step-num">05</div>
+          <div class="rm-step-body">
+            <h4>Trattativa con le assicurazioni</h4>
+            <p>Negoziazione diretta con i liquidatori delle compagnie assicurative. Verifica della congruità delle offerte risarcitorie e tutela del cliente da proposte lesive o sottostimate.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="rm-col">
+      <div class="rm-col-header">
+        <div class="rm-col-icon">🏛</div>
+        <div>
+          <div class="rm-col-title">Fase Giudiziale</div>
+          <div class="rm-col-sub">In sede civile</div>
+        </div>
+      </div>
+      <ul class="rm-steps">
+        <li class="rm-step">
+          <div class="rm-step-num">01</div>
+          <div class="rm-step-body">
+            <h4>Accertamento tecnico preventivo (ATP)</h4>
+            <p>Richiesta di ATP ai sensi dell'art. 696-bis c.p.c.: uno strumento fondamentale per cristallizzare le prove prima del giudizio ordinario, con nomina di CTU medico-legale da parte del Tribunale.</p>
+          </div>
+        </li>
+        <li class="rm-step">
+          <div class="rm-step-num">02</div>
+          <div class="rm-step-body">
+            <h4>Azione civile ex L. 24/2017 (Gelli-Bianco)</h4>
+            <p>Promozione dell'azione risarcitoria nei confronti della struttura sanitaria (responsabilità contrattuale ex art. 7) e del singolo professionista (responsabilità extracontrattuale ex art. 7 c. 3), con la scelta della strategia più favorevole al caso concreto.</p>
+          </div>
+        </li>
+        <li class="rm-step">
+          <div class="rm-step-num">03</div>
+          <div class="rm-step-body">
+            <h4>CTU medico-legale e tecnica</h4>
+            <p>Assistenza del cliente durante tutta la consulenza tecnica d'ufficio: nomina del CTP, deposito di memorie osservative, contestazione delle conclusioni peritali erronee o incomplete.</p>
+          </div>
+        </li>
+        <li class="rm-step">
+          <div class="rm-step-num">04</div>
+          <div class="rm-step-body">
+            <h4>Giudizio di merito e impugnazioni</h4>
+            <p>Difesa in primo grado davanti al Tribunale ordinario, prosecuzione in Corte d'Appello in caso di esito sfavorevole e, ove necessario, ricorso per Cassazione, con piena abilitazione al patrocinio dinanzi alle Giurisdizioni Superiori.</p>
+          </div>
+        </li>
+        <li class="rm-step">
+          <div class="rm-step-num">05</div>
+          <div class="rm-step-body">
+            <h4>Liquidazione e tutela esecutiva</h4>
+            <p>Una volta ottenuta la sentenza favorevole, assistenza nella fase di esecuzione forzata per il recupero delle somme riconosciute, incluso il pignoramento dei beni della struttura o della compagnia inadempiente.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Tre highlight -->
+  <div class="rm-highlight-grid">
+    <div class="rm-highlight">
+      <div class="rm-highlight-label">Danno risarcibile</div>
+      <p>Danno biologico permanente e temporaneo, danno morale, danno patrimoniale da perdita di reddito, spese mediche future, danno da perdita di chance di guarigione, danno da lesione del diritto all'autodeterminazione.</p>
+    </div>
+    <div class="rm-highlight">
+      <div class="rm-highlight-label">Riferimenti normativi</div>
+      <p>Legge Gelli-Bianco (L. 24/2017), art. 696-bis c.p.c., artt. 2043 e 1218 c.c., Tabelle del Tribunale di Milano e di Roma per la liquidazione del danno non patrimoniale.</p>
+    </div>
+    <div class="rm-highlight">
+      <div class="rm-highlight-label">Supporto specialistico</div>
+      <p>Lo Studio opera in collaborazione con una rete consolidata di medici legali, chirurghi specialisti e consulenti tecnici per garantire al cliente la più solida base scientifica di supporto alla tesi giuridica.</p>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="rm-cta-strip">
+    <div class="rm-cta-text">Hai subìto un danno a causa di un errore medico? <em>Raccontaci cosa è successo.</em></div>
+    <a href="file:///C:/Users/user/Downloads/avv_velli_updated%20(3)%20(1).html#contatti" class="rm-cta-btn">
+      Richiedi una prima valutazione
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 3l4 4-4 4"></path></svg>
+    </a>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="experience" id="esperienza">
+  <div class="section-label">Percorso Professionale</div>
+  <h2 class="section-title">Una carriera <em>costruita</em><br>con rigore e passione</h2>
+  <div class="exp-timeline">
+
+    <div class="exp-item">
+      <div class="exp-date">2023 – oggi</div>
+      <div class="exp-content">
+        <h3>Avvocato Cassazionista</h3>
+        <div class="org">Corte di Cassazione e Giurisdizioni Superiori</div>
+        <p>Iscrizione all'Albo Speciale che consente il patrocinio dinanzi alla Corte di Cassazione e alle più alte corti italiane. Gestione di ricorsi in materia civile, commerciale e del lavoro.</p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-date">2019 – 2023</div>
+      <div class="exp-content">
+        <h3>Consulente Due Diligence – Crediti Leasing</h3>
+        <div class="org">Società di Gestione e Recupero Crediti</div>
+        <p>Attività di Due Diligence e consulenza nella gestione di crediti leasing. Monitoraggio delle iniziative giudiziali e stragiudiziali, redazione di Business Plan e reportistica specializzata.</p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-date">2013 – 2022</div>
+      <div class="exp-content">
+        <h3>Avvocato Fiduciario</h3>
+        <div class="org">Banca di Credito Cooperativo di Serino (AV)</div>
+        <p>Gestione di tutti i contenziosi legali dell'istituto bancario. Recupero crediti giudiziale e stragiudiziale, assistenza in procedure esecutive mobiliari e immobiliari, tutela dei diritti creditori.</p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-date">2013 – 2020</div>
+      <div class="exp-content">
+        <h3>Collaborazione Studio Legale</h3>
+        <div class="org">Studio Specializzato in Recupero Crediti</div>
+        <p>Gestione stragiudiziale e giudiziale di crediti insoluti: contatto con debitori, negoziazione di piani di rientro, promozione di decreti ingiuntivi e procedure esecutive individuali e concorsuali.</p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-date">2006</div>
+      <div class="exp-content">
+        <h3>Laurea in Giurisprudenza</h3>
+        <div class="org">Università degli Studi di Salerno</div>
+        <p>Laurea magistrale a ciclo unico (vecchio ordinamento) con indirizzo professionale-forense. Formazione solida in tutti i rami del diritto privato, pubblico e processuale.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="certifications">
+  <div class="section-label">Formazione e Abilitazioni</div>
+  <h2 class="section-title">Aggiornamento <em>continuo</em><br>e specializzazioni</h2>
+  <div class="cert-grid">
+    <div class="cert-card">
+      <div class="cert-year">2011</div>
+      <div class="cert-title">Custode Giudiziario nelle procedure esecutive immobiliari</div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-year">2012</div>
+      <div class="cert-title">Mediatore Civile Professionista</div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-year">2021</div>
+      <div class="cert-title">Specializzazione in Responsabilità Medica e Sanitaria</div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-year">2022</div>
+      <div class="cert-title">Gestore della Crisi da Sovraindebitamento (L. 3/2012)</div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPRESE -->
+<section class="imprese" id="imprese">
+  <div class="section-label">Servizi per le Imprese</div>
+  <h2 class="section-title">L'avvocato <em>al fianco</em><br>dell'imprenditore</h2>
+  <p class="imprese-intro">Lo Studio offre un servizio di consulenza legale continuativa pensato specificamente per le imprese: PMI, professionisti, artigiani e società di capitali. L'obiettivo è prevenire le controversie prima che insorgano e, quando necessario, risolverle con rapidità e concretezza.</p>
+  <div class="imprese-grid">
+
+    <div class="imprese-block">
+      <div class="imprese-block-title">Vita societaria</div>
+      <ul class="imprese-list">
+        <li>Costituzione di SRL, SPA, SAS, SNC e ditte individuali</li>
+        <li>Redazione e modifica di statuti e atti costitutivi</li>
+        <li>Patti parasociali e accordi tra soci</li>
+        <li>Recesso ed esclusione del socio</li>
+        <li>Scioglimento, liquidazione e trasformazione societaria</li>
+        <li>Operazioni di fusione e scissione</li>
+      </ul>
+    </div>
+
+    <div class="imprese-block">
+      <div class="imprese-block-title">Contrattualistica</div>
+      <ul class="imprese-list">
+        <li>Contratti di appalto, sub-appalto e d'opera professionale</li>
+        <li>Contratti di fornitura, somministrazione e distribuzione</li>
+        <li>Accordi di agenzia, mandato e procacciamento d'affari</li>
+        <li>Franchising e licenze d'uso</li>
+        <li>Contratti di leasing operativo e finanziario</li>
+        <li>NDA, lettere d'intento e accordi precontrattuali</li>
+      </ul>
+    </div>
+
+    <div class="imprese-block">
+      <div class="imprese-block-title">Operazioni straordinarie</div>
+      <ul class="imprese-list">
+        <li>Cessione, affitto e rilievo di azienda o ramo d'azienda</li>
+        <li>Due Diligence legale pre-acquisizione</li>
+        <li>Tutela di marchi, brevetti e know-how aziendale</li>
+        <li>Risoluzione dei contratti e gestione degli inadempimenti</li>
+        <li>Recupero crediti commerciali tra imprese</li>
+        <li>Accesso alle procedure di composizione della crisi d'impresa</li>
+      </ul>
+    </div>
+
+    <div class="imprese-block">
+      <div class="imprese-block-title">Contenzioso d'impresa</div>
+      <ul class="imprese-list">
+        <li>Controversie tra soci e tra soci e società</li>
+        <li>Azioni di responsabilità verso amministratori</li>
+        <li>Concorrenza sleale e violazione di clausole di non concorrenza</li>
+        <li>Inadempimento contrattuale e risarcimento del danno</li>
+        <li>Opposizione a decreti ingiuntivi e procedure esecutive</li>
+        <li>Mediazione obbligatoria e arbitrato commerciale</li>
+      </ul>
+    </div>
+
+    <div class="imprese-block">
+      <div class="imprese-block-title">Diritto Amministrativo</div>
+      <ul class="imprese-list">
+        <li>Impugnazione di provvedimenti amministrativi illegittimi al TAR</li>
+        <li>Ricorsi al Consiglio di Stato in appello</li>
+        <li>Tutela in materia di appalti e gare pubbliche (D.Lgs. 36/2023)</li>
+        <li>Autorizzazioni, concessioni e permessi di costruire</li>
+        <li>Opposizione a ordinanze di demolizione e abusi edilizi</li>
+        <li>Ricorsi avverso sanzioni amministrative pecuniarie</li>
+        <li>Accesso agli atti e diritto di trasparenza amministrativa</li>
+        <li>Rapporti con enti pubblici, comuni e amministrazioni regionali</li>
+      </ul>
+    </div>
+
+    <div class="imprese-block">
+      <div class="imprese-block-title">Diritto Tributario</div>
+      <ul class="imprese-list">
+        <li>Impugnazione di avvisi di accertamento e atti impositivi</li>
+        <li>Ricorsi contro cartelle esattoriali e avvisi di addebito</li>
+        <li>Difesa davanti alle Corti di Giustizia Tributaria (I e II grado)</li>
+        <li>Opposizione a fermi amministrativi e ipoteche fiscali</li>
+        <li>Piani di rateizzazione e definizioni agevolate del debito</li>
+        <li>Contenzioso con Agenzia delle Entrate-Riscossione</li>
+        <li>Tributi locali: IMU, TARI, addizionali comunali e regionali</li>
+        <li>Collaborazione con commercialisti per strategie fiscali integrate</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- OSSERVATORIO GIURISPRUDENZIALE -->
+<section class="osservatorio" id="giurisprudenza">
+  <div class="section-label">Aggiornamenti Settimanali</div>
+  <h2 class="section-title">Osservatorio <em>Giurisprudenziale</em></h2>
+
+  <!-- Ticker -->
+  <div class="oss-ticker-wrap">
+    <div class="oss-ticker-label">
+      <span class="live-dot"></span>
+      Settimana 14–18 apr 2025
+    </div>
+    <div class="oss-ticker-track">
+      <div class="oss-ticker-inner" id="tickerInner">
+        <span class="oss-ticker-item"><span class="oss-ticker-court">Cass. Civ. Sez. III</span> — Resp. medica: consenso informato, firma del modulo non basta</span>
+        <span class="oss-ticker-item"><span class="oss-ticker-court">TAR Campania</span> — Dir. amministrativo: ordinanza demolizione nulla dopo 10 anni senza motivazione rafforzata</span>
+        <span class="oss-ticker-item"><span class="oss-ticker-court">Cass. Civ. Sez. I</span> — Dir. societario: esclusione del socio di SRL, obbligo di preavviso e contraddittorio</span>
+        <span class="oss-ticker-item"><span class="oss-ticker-court">Trib. Milano</span> — Contrattualistica: clausola penale manifestamente eccessiva, riduzione d'ufficio</span>
+        <span class="oss-ticker-item"><span class="oss-ticker-court">Cass. Civ. Sez. I</span> — Dir. commerciale: anatocismo bancario, capitalizzazione trimestrale nulla ex art. 1283 c.c.</span>
+        <span class="oss-ticker-item"><span class="oss-ticker-court">Cass. Civ. Sez. III</span> — Esecuzioni: pignoramento presso terzi, dichiarazione negativa del terzo e onere della prova</span>
+        <span class="oss-ticker-item"><span class="oss-ticker-court">Cass. Lav.</span> — Dir. del lavoro: infortunio in itinere, deviazione necessitata per accompagnare il figlio a scuola</span>
+        <span class="oss-ticker-item"><span class="oss-ticker-court">Cass. Civ. Sez. I</span> — Dir. di famiglia: assegno divorzile, contribuzione indiretta e componente compensativa</span>
+        <!-- Duplicate for seamless loop -->
+        <span class="oss-ticker-item"><span class="oss-ticker-court">Cass. Civ. Sez. III</span> — Resp. medica: consenso informato, firma del modulo non basta</span>
+        <span class="oss-ticker-item"><span class="oss-ticker-court">TAR Campania</span> — Dir. amministrativo: ordinanza demolizione nulla dopo 10 anni senza motivazione rafforzata</span>
+        <span class="oss-ticker-item"><span class="oss-ticker-court">Cass. Civ. Sez. I</span> — Dir. societario: esclusione del socio di SRL, obbligo di preavviso e contraddittorio</span>
+        <span class="oss-ticker-item"><span class="oss-ticker-court">Trib. Milano</span> — Contrattualistica: clausola penale manifestamente eccessiva, riduzione d'ufficio</span>
+        <span class="oss-ticker-item"><span class="oss-ticker-court">Cass. Civ. Sez. I</span> — Dir. commerciale: anatocismo bancario, capitalizzazione trimestrale nulla ex art. 1283 c.c.</span>
+        <span class="oss-ticker-item"><span class="oss-ticker-court">Cass. Civ. Sez. III</span> — Esecuzioni: pignoramento presso terzi, dichiarazione negativa del terzo e onere della prova</span>
+        <span class="oss-ticker-item"><span class="oss-ticker-court">Cass. Lav.</span> — Dir. del lavoro: infortunio in itinere, deviazione necessitata per accompagnare il figlio a scuola</span>
+        <span class="oss-ticker-item"><span class="oss-ticker-court">Cass. Civ. Sez. I</span> — Dir. di famiglia: assegno divorzile, contribuzione indiretta e componente compensativa</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Filters -->
+  <div class="oss-filters">
+    <button class="oss-filter-btn active" onclick="filterSentenze(&#39;tutte&#39;, this)">Tutte le Aree</button>
+    <button class="oss-filter-btn" onclick="filterSentenze(&#39;medica&#39;, this)">Resp. Medica</button>
+    <button class="oss-filter-btn" onclick="filterSentenze(&#39;amministrativo&#39;, this)">Amministrativo</button>
+    <button class="oss-filter-btn" onclick="filterSentenze(&#39;societario&#39;, this)">Dir. Societario</button>
+    <button class="oss-filter-btn" onclick="filterSentenze(&#39;contrattualistica&#39;, this)">Contrattualistica</button>
+    <button class="oss-filter-btn" onclick="filterSentenze(&#39;commerciale&#39;, this)">Dir. Commerciale</button>
+    <button class="oss-filter-btn" onclick="filterSentenze(&#39;esecuzioni&#39;, this)">Esecuzioni</button>
+    <button class="oss-filter-btn" onclick="filterSentenze(&#39;lavoro&#39;, this)">Dir. del Lavoro</button>
+    <button class="oss-filter-btn" onclick="filterSentenze(&#39;famiglia&#39;, this)">Dir. di Famiglia</button>
+  </div>
+
+  <!-- Cards Grid -->
+  <div class="oss-grid" id="ossgrid">
+
+    <div class="sent-card is-new" data-area="medica">
+      <span class="sent-new-badge">Nuovo</span>
+      <div class="sent-card-top">
+        <span class="sent-area-badge">Resp. Medica</span>
+        <span class="sent-date">16 apr 2025</span>
+      </div>
+      <div class="sent-court">Cass. Civ., Sez. III — n. 9841/2025</div>
+      <div class="sent-title">Consenso informato: la firma del modulo non esonera il medico dall'obbligo di spiegazione personalizzata</div>
+      <div class="sent-massima">Il consenso informato non si esaurisce nella sottoscrizione di un modulo prestampato. Il sanitario è tenuto a fornire spiegazioni adeguate alla capacità di comprensione del singolo paziente, pena il configurarsi del danno da lesione del diritto all'autodeterminazione, autonomamente risarcibile.</div>
+      <div class="sent-ref">Rif. artt. 1, 2 L. 219/2017 · art. 2043 c.c.</div>
+    </div>
+
+    <div class="sent-card is-new" data-area="amministrativo">
+      <span class="sent-new-badge">Nuovo</span>
+      <div class="sent-card-top">
+        <span class="sent-area-badge">Amministrativo</span>
+        <span class="sent-date">16 apr 2025</span>
+      </div>
+      <div class="sent-court">TAR Campania, Napoli, Sez. II — n. 2341/2025</div>
+      <div class="sent-title">Ordinanza di demolizione: illegittima se adottata oltre 10 anni dall'abuso senza motivazione rafforzata</div>
+      <div class="sent-massima">Il decorso di un lungo lasso di tempo dalla commissione dell'abuso edilizio obbliga l'Amministrazione ad adottare una motivazione rafforzata che tenga conto del legittimo affidamento del proprietario, specie in assenza di procedimento penale pendente.</div>
+      <div class="sent-ref">Rif. art. 31 DPR 380/2001 · artt. 3 e 97 Cost.</div>
+    </div>
+
+    <div class="sent-card is-new" data-area="societario">
+      <span class="sent-new-badge">Nuovo</span>
+      <div class="sent-card-top">
+        <span class="sent-area-badge">Dir. Societario</span>
+        <span class="sent-date">15 apr 2025</span>
+      </div>
+      <div class="sent-court">Cass. Civ., Sez. I — n. 9780/2025</div>
+      <div class="sent-title">Esclusione del socio di SRL: necessario il preavviso e il rispetto del contraddittorio anche in caso di giusta causa</div>
+      <div class="sent-massima">La clausola statutaria che prevede l'esclusione del socio per giusta causa non attribuisce agli amministratori un potere esercitabile in assenza di contraddittorio: il socio deve essere posto nelle condizioni di difendersi prima che la delibera produca effetti, pena l'annullabilità della stessa.</div>
+      <div class="sent-ref">Rif. art. 2473-bis c.c. · artt. 24 Cost.</div>
+    </div>
+
+    <div class="sent-card" data-area="contrattualistica">
+      <div class="sent-card-top">
+        <span class="sent-area-badge">Contrattualistica</span>
+        <span class="sent-date">14 apr 2025</span>
+      </div>
+      <div class="sent-court">Cass. Civ., Sez. II — n. 9650/2025</div>
+      <div class="sent-title">Clausola penale eccessiva: il giudice può ridurla d'ufficio anche in assenza di domanda di parte</div>
+      <div class="sent-massima">La riduzione della penale manifestamente eccessiva, ai sensi dell'art. 1384 c.c., è rimessa alla valutazione equitativa del giudice, il quale può provvedervi d'ufficio anche quando la parte inadempiente non ne abbia fatto espressa richiesta, trattandosi di norma posta a tutela di un interesse generale.</div>
+      <div class="sent-ref">Rif. art. 1384 c.c. · Cass. SS.UU. 18128/2005</div>
+    </div>
+
+    <div class="sent-card" data-area="commerciale">
+      <div class="sent-card-top">
+        <span class="sent-area-badge">Dir. Commerciale</span>
+        <span class="sent-date">14 apr 2025</span>
+      </div>
+      <div class="sent-court">Cass. Civ., Sez. I — n. 9712/2025</div>
+      <div class="sent-title">Anatocismo bancario: la capitalizzazione trimestrale degli interessi passivi è nulla anche dopo la delibera CICR 2000</div>
+      <div class="sent-massima">La clausola che prevede la capitalizzazione trimestrale degli interessi a debito del correntista è nulla per contrasto con l'art. 1283 c.c., in assenza di equa reciprocità dimostrata in concreto tra capitalizzazione attiva e passiva. Il saldo va ricalcolato con interessi semplici.</div>
+      <div class="sent-ref">Rif. art. 1283 c.c. · delibera CICR 9.2.2000</div>
+    </div>
+
+    <div class="sent-card" data-area="esecuzioni">
+      <div class="sent-card-top">
+        <span class="sent-area-badge">Esecuzioni</span>
+        <span class="sent-date">12 apr 2025</span>
+      </div>
+      <div class="sent-court">Cass. Civ., Sez. III — n. 9520/2025</div>
+      <div class="sent-title">Pignoramento presso terzi: la dichiarazione negativa del terzo non esonera il creditore dall'onere di contestazione</div>
+      <div class="sent-massima">In caso di dichiarazione negativa resa dal terzo pignorato, il creditore procedente che intenda contestarne la veridicità deve attivarsi tempestivamente con apposita istanza di accertamento dell'obbligo del terzo, pena la declaratoria di estinzione del pignoramento nei confronti dello stesso.</div>
+      <div class="sent-ref">Rif. artt. 543, 548 c.p.c. · Riforma Cartabia D.Lgs. 149/2022</div>
+    </div>
+
+    <div class="sent-card" data-area="lavoro">
+      <div class="sent-card-top">
+        <span class="sent-area-badge">Dir. del Lavoro</span>
+        <span class="sent-date">11 apr 2025</span>
+      </div>
+      <div class="sent-court">Cass. Lav. — n. 9603/2025</div>
+      <div class="sent-title">Infortunio in itinere: il percorso "necessitato" comprende la deviazione per accompagnare il figlio a scuola</div>
+      <div class="sent-massima">La deviazione dal percorso casa-lavoro per accompagnare il figlio minore a scuola rientra nel "percorso necessitato" ai fini della tutela INAIL, qualora non vi siano alternative concrete disponibili per il lavoratore, con conseguente diritto alla rendita per infortunio.</div>
+      <div class="sent-ref">Rif. art. 12 D.Lgs. 38/2000 · T.U. 1124/1965</div>
+    </div>
+
+    <div class="sent-card" data-area="famiglia">
+      <div class="sent-card-top">
+        <span class="sent-area-badge">Dir. di Famiglia</span>
+        <span class="sent-date">10 apr 2025</span>
+      </div>
+      <div class="sent-court">Cass. Civ., Sez. I — n. 9408/2025</div>
+      <div class="sent-title">Assegno divorzile: la contribuzione indiretta all'attività del coniuge rileva ai fini della componente compensativo-perequativa</div>
+      <div class="sent-massima">Il giudice deve valorizzare il sacrificio professionale del coniuge che ha sostenuto, anche indirettamente, l'attività lavorativa dell'altro, con conseguente riduzione delle proprie prospettive di reddito autonomo. Tale contribuzione concorre alla determinazione della componente compensativa dell'assegno divorzile.</div>
+      <div class="sent-ref">Rif. art. 5 L. 898/1970 · Cass. SS.UU. 18287/2018</div>
+    </div>
+
+  </div>
+
+  <!-- Footer strip -->
+  <div class="oss-footer-strip">
+    <div class="oss-update-info">
+      <span class="live-dot"></span>
+      Aggiornamento settimanale — Settimana 14–18 aprile 2025 &nbsp;·&nbsp; Fonti: Cassazione, TAR, Corti d'Appello, Tribunali di merito
+    </div>
+    <a class="oss-subscribe-cta" href="file:///C:/Users/user/Downloads/avv_velli_updated%20(3)%20(1).html#contatti">
+      Ricevi aggiornamenti settimanali
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 3l4 4-4 4"></path></svg>
+    </a>
+  </div>
+</section>
+
+<!-- PERCHE' NOI -->
+<section class="whyus">
+  <div class="section-label">Il nostro approccio</div>
+  <h2 class="section-title">Perché scegliere <em>lo Studio</em></h2>
+  <div class="whyus-grid">
+    <div class="why-card">
+      <div class="why-num">01</div>
+      <h3>Ascolto prima di tutto</h3>
+      <p>Ogni caso inizia da un colloquio approfondito. Comprendere la situazione del cliente nella sua interezza è il presupposto indispensabile per costruire una strategia legale efficace e personalizzata.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-num">02</div>
+      <h3>Approccio multidisciplinare</h3>
+      <p>La complessità delle situazioni legali richiede competenze trasversali. Lo Studio integra diritto civile, commerciale, bancario e del lavoro, operando in sinergia con professionisti commercialisti e fiscali.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-num">03</div>
+      <h3>Stragiudiziale prima del giudizio</h3>
+      <p>Privileg iamo sempre la soluzione negoziale e la mediazione, più rapida ed economica per il cliente. Il ricorso al giudizio è uno strumento, non il punto di partenza.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-num">04</div>
+      <h3>Aggiornamento costante</h3>
+      <p>La normativa e la giurisprudenza evolvono continuamente. Lo Studio investe nella formazione permanente per garantire sempre la consulenza più aggiornata e aderente al diritto vigente.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-num">05</div>
+      <h3>Trasparenza e chiarezza</h3>
+      <p>Il cliente ha diritto di capire la propria situazione legale. Comunichiamo in modo chiaro, senza tecnicismi inutili, e aggiorniamo tempestivamente sull'andamento di ogni pratica.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-num">06</div>
+      <h3>Presenza capillare sul territorio</h3>
+      <p>Con sedi ad Avellino e Napoli, lo Studio garantisce una presenza radicata in Campania, con la capacità di operare davanti a tutti i Tribunali della regione e alla Corte di Cassazione.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="section-label">Domande Frequenti</div>
+  <h2 class="section-title">Tutto quello che <em>vuoi sapere</em></h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Come si svolge il primo colloquio?
+        <span class="faq-arrow">+</span>
+      </button>
+      <div class="faq-a">
+        <p>Il primo colloquio è conoscitivo e si svolge previo appuntamento presso una delle nostre sedi (Avellino o Napoli) o, su richiesta, anche in forma telematica. In questa sede il cliente espone la propria situazione e l'avvocato fornisce una prima valutazione del caso, indicando le possibili strade percorribili e i relativi costi.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Come vengono calcolati gli onorari?
+        <span class="faq-arrow">+</span>
+      </button>
+      <div class="faq-a">
+        <p>Gli onorari sono determinati in conformità ai parametri forensi ministeriali (D.M. 55/2014 e successive modifiche), tenendo conto della complessità della pratica, del valore della controversia e dell'impegno richiesto. Prima di qualsiasi incarico viene fornito un preventivo di massima trasparente e dettagliato.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Operate solo in Campania o anche in altre regioni?
+        <span class="faq-arrow">+</span>
+      </button>
+      <div class="faq-a">
+        <p>Lo Studio opera principalmente davanti ai Tribunali campani (Avellino, Napoli, Benevento, Salerno, Caserta) e alle rispettive Corti d'Appello. In qualità di Cassazionista, l'Avv. Velli patrocina cause davanti alla Corte di Cassazione a Roma. Per giurisdizioni in altre regioni, operiamo tramite una consolidata rete di colleghi di fiducia.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Cosa si intende per mediazione civile?
+        <span class="faq-arrow">+</span>
+      </button>
+      <div class="faq-a">
+        <p>La mediazione è una procedura stragiudiziale obbligatoria in molte materie (condominio, diritti reali, successioni, locazioni, responsabilità medica, ecc.) che consente alle parti di raggiungere un accordo con l'ausilio di un mediatore professionista. L'Avv. Velli è mediatore civile professionista abilitato e assiste i clienti in tutte le fasi del procedimento.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Gestite anche pratiche di sovraindebitamento per privati?
+        <span class="faq-arrow">+</span>
+      </button>
+      <div class="faq-a">
+        <p>Sì. L'Avv. Velli è abilitato come Gestore della Crisi da Sovraindebitamento ai sensi del Codice della Crisi d'Impresa (D.Lgs. 14/2019). Assistiamo privati, consumatori e piccoli imprenditori nell'accesso alle procedure di esdebitazione e nei piani del consumatore, offrendo una via d'uscita legale e dignitosa dal sovraindebitamento.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Come funziona il ricorso contro l'INAIL?
+        <span class="faq-arrow">+</span>
+      </button>
+      <div class="faq-a">
+        <p>Quando l'INAIL nega o riduce una rendita per infortunio sul lavoro o malattia professionale, il lavoratore ha diritto di impugnare il provvedimento. Il procedimento si articola generalmente in una fase amministrativa di ricorso interno e, in caso di esito negativo, in un giudizio davanti al Tribunale del Lavoro competente. Lo Studio assiste il lavoratore in ogni fase, avvalendosi di medici legali specializzati per dimostrare il nesso causale tra l'attività svolta e la patologia riconosciuta, e per quantificare correttamente il grado di invalidità permanente.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Posso impugnare un provvedimento del Comune o di un ente pubblico?
+        <span class="faq-arrow">+</span>
+      </button>
+      <div class="faq-a">
+        <p>Sì. Privati e imprese possono impugnare davanti al TAR (Tribunale Amministrativo Regionale) i provvedimenti illegittimi della Pubblica Amministrazione — comuni, regioni, enti pubblici — quali dinieghi di autorizzazioni, permessi di costruire, ordinanze di demolizione, esclusioni da gare d'appalto e sanzioni amministrative. I termini per il ricorso sono in genere di 60 giorni dalla notifica o dalla piena conoscenza dell'atto. Lo Studio valuta la fondatezza del ricorso e assiste il cliente in ogni grado del giudizio amministrativo, incluso il Consiglio di Stato.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section class="values">
+  <div class="values-inner">
+    <blockquote>Il diritto non è soltanto norma: è strumento di giustizia, tutela della persona e garanzia di equilibrio nella vita sociale e d'impresa.</blockquote>
+    <p class="quote-author">— Avv. Massimo Velli</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contatti">
+  <div class="section-label">Contatti</div>
+  <h2 class="section-title">Iniziamo a <em>lavorare</em><br>insieme</h2>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <p>Per richiedere una consulenza o ottenere maggiori informazioni sulle aree di attività dello studio, non esitate a contattarci. Il primo colloquio conoscitivo è disponibile previo appuntamento presso entrambe le sedi.</p>
+      <ul class="contact-details">
+        <li>
+          <span class="detail-label">Studio AV</span>
+          <span class="detail-value">Via Aldo Pini, 10 – Avellino</span>
+        </li>
+        <li>
+          <span class="detail-label">Studio NA</span>
+          <span class="detail-value">Via S. M. a Cappella Vecchia, 3 – Napoli</span>
+        </li>
+        <li>
+          <span class="detail-label">Telefono</span>
+          <span class="detail-value"><a href="tel:3286616027">328 661 6027</a></span>
+        </li>
+        <li>
+          <span class="detail-label">E-mail</span>
+          <span class="detail-value"><a href="mailto:velli@studiolegalevelli.it">velli@studiolegalevelli.it</a></span>
+        </li>
+        <li>
+          <span class="detail-label">PEC</span>
+          <span class="detail-value"><a href="mailto:massimo.velli@avvocatiavellinopec.it">massimo.velli@avvocatiavellinopec.it</a></span>
+        </li>
+        <li>
+          <span class="detail-label">Orari</span>
+          <span class="detail-value">Lun–Ven, 9:00 – 18:00<br>Sabato su appuntamento</span>
+        </li>
+      </ul>
+    </div>
+    <div class="contact-form-area">
+      <h3>Scrivici un messaggio</h3>
+
+      <!-- Messaggio di successo -->
+      <div id="form-success" style="display:none; padding:1.5rem; border:1px solid rgba(184,151,58,0.4); background:rgba(184,151,58,0.06); margin-bottom:1rem;">
+        <p style="color:#2a5c3f; font-size:0.92rem; font-weight:400; line-height:1.6;">
+          ✓ &nbsp;Messaggio inviato con successo. La risponderemo al più presto.
+        </p>
+      </div>
+
+      <!-- Messaggio di errore -->
+      <div id="form-error" style="display:none; padding:1.5rem; border:1px solid rgba(180,60,60,0.4); background:rgba(180,60,60,0.05); margin-bottom:1rem;">
+        <p style="color:#8b2020; font-size:0.92rem; font-weight:400; line-height:1.6;">
+          ✗ &nbsp;Si è verificato un errore. Riprovi oppure scriva direttamente a <a href="mailto:velli@studiolegalevelli.it" style="color:#8b2020;">velli@studiolegalevelli.it</a>
+        </p>
+      </div>
+
+      <div id="contact-form">
+        <div class="form-group">
+          <label for="cf-nome">Nome e Cognome <span style="color:var(--gold)">*</span></label>
+          <input id="cf-nome" type="text" placeholder="Mario Rossi" required="">
+        </div>
+        <div class="form-group">
+          <label for="cf-email">Indirizzo e-mail <span style="color:var(--gold)">*</span></label>
+          <input id="cf-email" type="email" placeholder="mario@esempio.it" required="">
+        </div>
+        <div class="form-group">
+          <label for="cf-telefono">Telefono (opzionale)</label>
+          <input id="cf-telefono" type="tel" placeholder="328 000 0000">
+        </div>
+        <div class="form-group">
+          <label for="cf-oggetto">Oggetto della richiesta <span style="color:var(--gold)">*</span></label>
+          <input id="cf-oggetto" type="text" placeholder="Es. Consulenza responsabilità medica" required="">
+        </div>
+        <div class="form-group">
+          <label for="cf-messaggio">Messaggio <span style="color:var(--gold)">*</span></label>
+          <textarea id="cf-messaggio" placeholder="Descriva brevemente la sua situazione..." required=""></textarea>
+        </div>
+        <p style="font-size:0.68rem; color:var(--text-muted); margin-bottom:1.2rem; line-height:1.6;">
+          I dati inseriti saranno utilizzati esclusivamente per rispondere alla sua richiesta, nel rispetto del Reg. UE 2016/679 (GDPR).
+        </p>
+        <button class="btn-submit" id="btn-invia" onclick="inviaForm()">Invia la Richiesta</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">Studio Legale Velli</div>
+  <div class="footer-note">© 2025 Avv. Massimo Velli — C.F. VLLMSM78T12A509K — Iscritto COA Avellino</div>
+</footer>
+
+<script data-cfasync="false" src="file:///C:/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+/* =========================================================
+   FORM CONTATTI — Formspree
+   ISTRUZIONI:
+   1. Vai su https://formspree.io e registrati con velli@studiolegalevelli.it
+   2. Crea un nuovo form e copia il tuo ID (es. "xpwzabcd")
+   3. Sostituisci YOUR_FORM_ID qui sotto con il tuo ID reale
+   ========================================================= */
+var FORMSPREE_ID = 'YOUR_FORM_ID';
+
+async function inviaForm() {
+  var nome     = document.getElementById('cf-nome').value.trim();
+  var email    = document.getElementById('cf-email').value.trim();
+  var telefono = document.getElementById('cf-telefono').value.trim();
+  var oggetto  = document.getElementById('cf-oggetto').value.trim();
+  var msg      = document.getElementById('cf-messaggio').value.trim();
+
+  // Validazione base
+  if (!nome || !email || !oggetto || !msg) {
+    alert('Si prega di compilare tutti i campi obbligatori (*).');
+    return;
+  }
+  var emailReg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailReg.test(email)) {
+    alert('Indirizzo e-mail non valido.');
+    return;
+  }
+
+  // Disabilita il pulsante durante l'invio
+  var btn = document.getElementById('btn-invia');
+  btn.textContent = 'Invio in corso…';
+  btn.disabled = true;
+  btn.style.opacity = '0.6';
+
+  try {
+    var res = await fetch('https://formspree.io/f/' + FORMSPREE_ID, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        nome:     nome,
+        email:    email,
+        telefono: telefono || '—',
+        oggetto:  oggetto,
+        messaggio: msg
+      })
+    });
+
+    if (res.ok) {
+      document.getElementById('contact-form').style.display = 'none';
+      document.getElementById('form-success').style.display = 'block';
+      document.getElementById('form-error').style.display   = 'none';
+    } else {
+      throw new Error('server error');
+    }
+  } catch(e) {
+    document.getElementById('form-error').style.display = 'block';
+    btn.textContent = 'Invia la Richiesta';
+    btn.disabled = false;
+    btn.style.opacity = '1';
+  }
+}
+function filterSentenze(area, btn) {
+  // Update active button
+  document.querySelectorAll('.oss-filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  // Filter cards
+  document.querySelectorAll('.sent-card').forEach(card => {
+    if (area === 'tutte' || card.dataset.area === area) {
+      card.classList.remove('hidden');
+    } else {
+      card.classList.add('hidden');
+    }
+  });
+}
+function toggleFaq(btn) {
+  var answer = btn.nextElementSibling;
+  var arrow = btn.querySelector('.faq-arrow');
+  var isOpen = answer.classList.contains('open');
+  document.querySelectorAll('.faq-a.open').forEach(function(a) {
+    a.classList.remove('open');
+    a.previousElementSibling.querySelector('.faq-arrow').textContent = '+';
+    a.previousElementSibling.querySelector('.faq-arrow').style.transform = '';
+  });
+  if (!isOpen) {
+    answer.classList.add('open');
+    arrow.textContent = '×';
+    arrow.style.transform = 'rotate(0deg)';
+  }
+}
+</script>
+
+
+</body></html>
